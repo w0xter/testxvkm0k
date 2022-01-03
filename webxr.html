@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web XR test</title>
+</head>
+<body>
+    Hello world
+</body>
+<script>
+   const supported = await navigator.xr.isSessionSupported('immersive-ar');
+    if (supported) {
+        window.alert("AR SUPPORTED")
+    // 'immersive-ar' sessions may be supported.
+    // Page should advertise support to the user.
+    } else {
+        window.alert("AR NOT SUPPORTED")
+
+    // 'immersive-ar' sessions are not supported.
+    }
+</script>
+</html>
